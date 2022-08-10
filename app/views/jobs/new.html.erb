@@ -1,0 +1,17 @@
+
+<div class="container my-5">
+<br>
+<br>
+<br>
+<br>
+
+  <h1 class="text-center">Create a new job</h1>
+
+  <%= simple_form_for(@job, html: { class: "container mx-auto shadow p-3 mb-5 bg-body rounded text-center w-25 p-3"}) do |f| %>
+    <%= f.input :position, input_html: { class: "form-control" }, label: false, placeholder: "Position" %>
+    <%= f.input :company, input_html: { class: "form-control" }, label: false, placeholder: "Company" %>
+    <%= f.input :link, input_html: { class: "form-control" }, label: false, placeholder: "Link" %>
+    <%= f.submit class: "btn btn-primary" %>
+  <% end %>
+
+</div>
